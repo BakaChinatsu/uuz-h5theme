@@ -1,6 +1,6 @@
 A HTML5 theme for https://uuz.moe
 
-Demonstration:https://uuz.moe
+Demonstration: https://uuz.moe
 
 ## How to use
 `sudo apt install git` or `sudo yum install git`
