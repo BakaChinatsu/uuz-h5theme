@@ -38,12 +38,15 @@ $icons_02 = "fa-github";
 $txt_02 = "GitHub";
 $url_02 = "https://github.com/BakaChinatsu/";
 
-//设置第三个图标及替代文字
-$icons_03 = "fa-google-plus";
-$txt_03 = "Google+";
-$url_03 = "https://plus.google.com/u/0/106072901155470558440";
+//设置第三个图标及替代文字(永远怀念 Google+ ）
+//$icons_03 = "fa-google-plus";
+//$txt_03 = "Google+";
+//$url_03 = "https://plus.google.com/u/0/106072901155470558440";
+$icons_03 = "fa-camera-retro";
+$txt_03 = "Photos";
+$url_03 = "https://photos.app.goo.gl/CLZQrE0LrK5dSVFE2";
 
-//设置下方button信息
+//设置下方 button 信息
 $button_name = "Blog";
 $button_url = "https://blog.uuz.moe";
 
