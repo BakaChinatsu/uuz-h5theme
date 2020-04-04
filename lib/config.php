@@ -14,7 +14,7 @@ $theme_color = "#22849f";
 
 //设置背景图像
 //请将背景文件放入 /images 文件夹
-$background_filename = "gensou.jpg";
+$background_filename = "50327795_p0.jpg";
 
 //设置头像
 //请将头像文件放入 /images 文件夹
