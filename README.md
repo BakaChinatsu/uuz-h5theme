@@ -7,6 +7,6 @@ Demonstration: https://uuz.moe
 
 `git clone https://github.com/BakaChinatsu/uuz-h5theme.git`
 
-*Found and open `lib/config.php`, then edit it.
-<br>
-*Enjoy it.
+**Found and open `lib/config.php`, then edit it.** 
+
+**Enjoy it.** 
