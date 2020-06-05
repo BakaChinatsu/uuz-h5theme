@@ -1,33 +1,27 @@
-@import '../libs/vars';
-@import '../libs/functions';
-@import '../libs/mixins';
-
 ///
 /// Identity by HTML5 UP
-/// html5up.net | @n33co
+/// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
 /* Main */
 
 	#main {
-		position: relative;
-		max-width: 100%;
-		min-width: 27em;
-		@include padding(4.5em, 3em);
-
-		background: _palette(bg);
-		border-radius: _size(border-radius);
-		cursor: default;
-		opacity: 0.95;
-		text-align: center;
-
 		@include vendor('transform-origin', '50% 50%');
 		@include vendor('transform', 'rotateX(0deg)');
 		@include vendor('transition', (
 			'opacity #{_duration(main)} ease',
 			'transform #{_duration(main)} ease'
 		));
+		@include padding(4.5em, 3em);
+		background: _palette(bg);
+		border-radius: _size(border-radius);
+		cursor: default;
+		max-width: 100%;
+		opacity: 0.95;
+		position: relative;
+		text-align: center;
+		width: 27em;
 
 		.avatar {
 			position: relative;
@@ -54,10 +48,9 @@
 			}
 		}
 
-		@include breakpoint(xsmall) {
-			min-width: 0;
-			width: 100%;
+		@include breakpoint('<=xsmall') {
 			@include padding(4em, 2em);
+			width: 100%;
 
 			.avatar {
 				&:before {
@@ -67,8 +60,8 @@
 			}
 		}
 
-		body.is-loading & {
-			opacity: 0;
+		body.is-preload & {
 			@include vendor('transform', 'rotateX(15deg)');
+			opacity: 0;
 		}
 	}

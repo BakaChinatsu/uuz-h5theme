@@ -1,10 +1,6 @@
-@import '../libs/vars';
-@import '../libs/functions';
-@import '../libs/mixins';
-
 ///
 /// Identity by HTML5 UP
-/// html5up.net | @n33co
+/// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
@@ -48,16 +44,14 @@
 		}
 
 		&.fit {
-			display: block;
 			width: 100%;
-			margin: 0 0 (_size(element-margin) * 0.5) 0;
 		}
 
 		&.small {
 			font-size: 0.8em;
 		}
 
-		&.big {
+		&.large {
 			font-size: 1.35em;
 		}
 

@@ -1,10 +1,6 @@
-@import '../libs/vars';
-@import '../libs/functions';
-@import '../libs/mixins';
-
 ///
 /// Identity by HTML5 UP
-/// html5up.net | @n33co
+/// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
@@ -19,11 +15,11 @@
 		letter-spacing: _size(letter-spacing);
 		text-transform: uppercase;
 
-		@include breakpoint(xlarge) {
+		@include breakpoint('<=xlarge') {
 			font-size: 11pt;
 		}
 
-		@include breakpoint(xsmall) {
+		@include breakpoint('<=xsmall') {
 			font-size: 10pt;
 			line-height: 1.75;
 		}
@@ -98,7 +94,7 @@
 		font-size: 1em;
 	}
 
-	@include breakpoint(xsmall) {
+	@include breakpoint('<=xsmall') {
 		h1 {
 			font-size: 1.65em;
 		}
