@@ -16,8 +16,8 @@ $html_lang = "ja";
 //定义网站标题 //サイトのタイトル
 $title = "雨宮千夏の博麗神社";
 
-//网站图标 //タグに表示するアイコンの設定
-$tag_icon = "icon.jpg";
+//网站图标 //タグに表示するアイコン（ファビコン）の設定
+$tag_icon = "reimu_48x48_pixiv_28660154.png";
 
 //定义 theme-color //ブラウザ要素の色
 $theme_color = "#22849f";
@@ -26,8 +26,8 @@ $theme_color = "#22849f";
 $background_filename = "50327795_p0.jpg";
 
 //设置头像 //アバターの設定
-$avatar_filename = "reimu.jpg";
-$avatar_height = "130px"; //高度//高さ
+$avatar_filename = "reimu_pixiv_28660154.png";
+$avatar_height = "130px"; //高度 //高さ
 $avatar_width = "130px"; //宽度 //幅
 
 //设置主标题 //表題の設定

@@ -23,7 +23,7 @@ include_once 'lib/config.php';
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <!-- タグに表示するアイコン -->
-        <link rel="icon" sizes="192x192" href="<?php echo $tag_icon;?>">
+        <link rel="icon" sizes="48x48" type="image/png" href="<?php echo $tag_icon;?>">
         <!-- ブラウザ要素の色 -->
         <meta name="theme-color" content="<?php echo $theme_color;?>">
 		<link rel="stylesheet" href="assets/css/main.css" />
