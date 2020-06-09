@@ -72,7 +72,7 @@ include_once 'lib/config.php';
 				<!-- Main -->
 					<section id="main">
 						<header>
-							<span class="avatar"><img src="images/<?php echo $avatar_filename; ?>" height="<?php ehco $avatar_height; ?>>" width="<?php echo $avatar_width; ?>" alt="" /></span>
+							<span class="avatar"><img src="images/<?php echo $avatar_filename; ?>" height="<?php echo $avatar_height; ?>>" width="<?php echo $avatar_width; ?>" alt="" /></span>
 							<h1><?php echo $main_title;?></h1>
 							<p><?php echo $sec_title;?></p>
 						</header>
