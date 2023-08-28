@@ -23,7 +23,7 @@ include_once 'lib/config.php';
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <!-- タグに表示するアイコン -->
-        <link rel="icon" sizes="48x48" type="image/png" href="<?php echo $tag_icon;?>">
+        <link rel="icon" sizes="48x48" type="image/png" href="images/<?php echo $tag_icon;?>">
         <!-- ブラウザ要素の色 -->
         <meta name="theme-color" content="<?php echo $theme_color;?>">
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -62,6 +62,22 @@ include_once 'lib/config.php';
             body.is-preload:after {
                 opacity: 1;
             }
+
+			p#hitokoto {
+				margin: 0 0 0em 0;
+			}
+
+			p#from {
+				margin: 0 0 -0.5em 0;
+			}
+
+			a#hitokoto {
+				font-size: 0.5em;
+			}
+
+			a#hitokoto_from {
+				font-size: 0.5em;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -122,14 +138,32 @@ include_once 'lib/config.php';
 						</footer>
 						<ul class="actions special">
 								<li><a href="<?php echo $button_url;?>" class="button"><?php echo $button_name;?></a></li>
-							</ul>
+						</ul>
+						<p id="hitokoto">
+  							<a href="#" id="hitokoto_text" target="_blank">:D 受信中...</a>
+						</p>
+						<p id="from" class="small" style="text-align: right">
+							<a href="#" id="hitokoto_from" target="_blank">:D 受信中...</a>
+						</p>
 					</section>
-
+					<script>
+							fetch('https://international.v1.hitokoto.cn?c=a')
+							.then(response => response.json())
+							.then(data => {
+								const hitokoto = document.querySelector('#hitokoto_text')
+								const from = document.querySelector('#hitokoto_from')
+								hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`
+								hitokoto.innerText = `「${data.hitokoto}」`
+								hitokoto_from.innerText = `——${data.from}`
+								hitokoto_from.href = `https://www.google.com/search?q=${data.from}`
+							})
+							.catch(console.error)
+						</script>
 				<!-- Footer -->
 					<footer id="footer">
                             <a>&copy; <?php echo $copyright; ?></a>
 						<ul class="copyright">
-                            <li>Use: <a href="https://github.com/BakaChinatsu/uuz-h5theme">uuz-h5theme</a></li>
+                            <li>Theme: <a href="https://github.com/BakaChinatsu/uuz-h5theme">uuz-h5theme</a></li>
 							<li>Powered: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</footer>
