@@ -67,16 +67,16 @@ include_once 'lib/config.php';
 				margin: 0 0 0em 0;
 			}
 
-			p#from {
+			p#hitokoto_from {
 				margin: 0 0 -0.5em 0;
 			}
 
-			a#hitokoto {
-				font-size: 0.5em;
+			a#hitokoto_text {
+				font-size: 0.9em;
 			}
 
-			a#hitokoto_from {
-				font-size: 0.5em;
+			a#hitokoto_from_text {
+				font-size: 0.7em;
 			}
 		</style>
 	</head>
@@ -142,16 +142,16 @@ include_once 'lib/config.php';
 						<p id="hitokoto">
   							<a href="#" id="hitokoto_text" target="_blank">:D 受信中...</a>
 						</p>
-						<p id="from" class="small" style="text-align: right">
-							<a href="#" id="hitokoto_from" target="_blank">:D 受信中...</a>
+						<p id="hitokoto_from" class="small" style="text-align: right">
+							<a href="#" id="hitokoto_from_text" target="_blank">:D 受信中...</a>
 						</p>
 					</section>
 					<script>
-							fetch('https://international.v1.hitokoto.cn?c=a')
+							fetch('https://v1.hitokoto.cn?c=a&c=b')
 							.then(response => response.json())
 							.then(data => {
 								const hitokoto = document.querySelector('#hitokoto_text')
-								const from = document.querySelector('#hitokoto_from')
+								const hitokoto_from = document.querySelector('#hitokoto_from_text')
 								hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`
 								hitokoto.innerText = `「${data.hitokoto}」`
 								hitokoto_from.innerText = `——${data.from}`
